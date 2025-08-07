@@ -232,12 +232,12 @@ function App() {
         <div className='w-full h-auto flex flex-col items-center relative pt-[100px]'>
           <Nav />
           <div className='w-full h-auto flex px-[10px]'>
-            <p className='text-3xl w-[45%] text-black p-[5px] rounded-tl-[10px] bg-[#ffdc20] border-black border-solid border-[2px]'>Anda saat ini berpotensi mengalami Penyakit :</p>
-            <p className='text-3xl w-[55%] font-bold bg-[#fff5bc] p-[5px] text-black border-black border-solid border-[2px] rounded-tr-[10px]'>Dermatitis (eksim)</p>
+            <p className='text-lg md:text-3xl w-[45%] text-black p-[5px] rounded-tl-[10px] bg-[#ffdc20] border-black border-solid border-[2px]'>Anda saat ini berpotensi mengalami Penyakit :</p>
+            <p className='text-lg md:text-3xl w-[55%] font-bold bg-[#fff5bc] p-[5px] text-black border-black border-solid border-[2px] rounded-tr-[10px]'>Dermatitis (eksim)</p>
           </div>
           <div className='w-full h-auto flex px-[10px] mb-[20px]'>
-            <p className='text-3xl w-[45%] text-black p-[5px] rounded-bl-[10px] bg-[#ffdc20] border-black border-solid border-[2px]'>Metode untuk mengobati:</p>
-            <p className='text-3xl w-[55%] font-bold text-black p-[5px] rounded-br-[10px] bg-[#fff5bc] border-black border-solid border-[2px]'>Gunakan salep kortikosteroid (seperti hidrokortison), 
+            <p className='text-lg md:text-3xl w-[45%] text-black p-[5px] rounded-bl-[10px] bg-[#ffdc20] border-black border-solid border-[2px]'>Metode untuk mengobati:</p>
+            <p className='text-lg md:text-3xl w-[55%] font-bold text-black p-[5px] rounded-br-[10px] bg-[#fff5bc] border-black border-solid border-[2px]'>Gunakan salep kortikosteroid (seperti hidrokortison), 
             Obat antihistamin jika gatal berlebihan, (Konsultasi ke dokter untuk pengobatan yang lebih akurat)</p>
           </div>
           

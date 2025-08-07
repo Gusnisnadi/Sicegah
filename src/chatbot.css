@@ -21,7 +21,7 @@
 	--chat--window--height: 600px;
 
 	--chat--header-height: auto;
-	--chat--header--padding: var(--chat--spacing);
+	--chat--header--padding: 1.2rem 0 0 1rem;
 	--chat--header--background: var(--chat--color-light-shade-100);
 	--chat--header--color: var(--chat--color-dark);
 	--chat--header--border-top: none;
@@ -29,7 +29,7 @@
 	--chat--header--border-bottom: none;
 	--chat--header--border-bottom: none;
 	--chat--heading--font-size: 2em;
-	--chat--subtitle--font-size: inherit;
+	--chat--subtitle--font-size: 1em;
 	--chat--subtitle--line-height: 1.8;
 
 	--chat--textarea--height: 50px;
@@ -51,6 +51,16 @@
 	--chat--toggle--active--background: var(--chat--color-primary-shade-100);
 	--chat--toggle--color: var(--chat--color-white);
 	--chat--toggle--size: 64px;
+}
+
+@media (max-width: 48rem) {
+	:root {
+		--chat--heading--font-size: 2rem;
+		--chat--subtitle--font-size: 1em;
+		--chat--message--font-size: 0.9rem;
+		--chat--message-line-height: 1.5;
+		--chat--textarea--height: 40px;
+	}
 }
 
 .leaflet-container{
