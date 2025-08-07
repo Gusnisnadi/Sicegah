@@ -13,13 +13,12 @@ function LocationMarker({ trigger }) {
 
     map.locate(
       {
-        setView: true,
         enableHighAccuracy: true
       }
     );
     const onLocationFound = (e) => {
       setPosition(e.latlng);
-      map.flyTo(e.latlng, map.getZoom());
+      map.flyTo(e.latlng, 13);
     };
 
     map.once('locationfound', onLocationFound);

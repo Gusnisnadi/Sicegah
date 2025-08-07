@@ -26,7 +26,7 @@ function WebcamCapture ({setPage}) {
 
     return (
             <>
-                <div className="flex flex-col md:flex-row mb-[10px] gap-[10px]">
+                <div className="flex flex-col xl:flex-row mb-[10px] gap-[10px] px-[10px] transition-all duration-[2s]">
                     <Webcam
                         audio={false}
                         height={360}
@@ -34,12 +34,12 @@ function WebcamCapture ({setPage}) {
                         screenshotFormat="image/jpeg"
                         width={640}
                         videoConstraints={videoConstraints}
-                        className="rounded-2xl"
+                        className="rounded-2xl border-black border-solid border-[2px] shadow-black shadow-sm"
                     />
                     {loading ? (
                     <div className="text-gray-600 italic text-lg flex items-center justify-center">Processing...</div>
                     ) : (
-                    cap && <img src={cap} alt="Captured" className="rounded-2xl" />
+                    cap && <img src={cap} alt="Captured" className="rounded-2xl border-black border-solid border-[2px] shadow-black shadow-sm" />
                     )}
                 </div>
                 <button
@@ -52,8 +52,8 @@ function WebcamCapture ({setPage}) {
                 {cap && !loading && (
                     <button
                         type='button'
-                        className='bg-[#ffdc20] shadow-black shadow-sm w-[150px] h-[50px] text-xl text-[20px] p-[10px] rounded-[10px] cursor-pointer'
-                        onClick={() => setPage('hasil-kesehatan')}
+                        className='bg-[#ffdc20] shadow-black shadow-sm w-[150px] h-[50px] text-xl text-[20px] p-[10px] rounded-[10px] cursor-pointer hover:bg-amber-600'
+                        onClick={() => setPage('hasil-kesehatan-kamera')}
                     >
                         Liat hasil
                     </button>
