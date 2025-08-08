@@ -19,9 +19,9 @@ function Dashboard ({setPage}) {
     });
 
     return(
-        <div className='w-full h-auto flex flex-col items-center relative overflow-x-hidden pt-[100px]'>
+        <div className='w-full h-auto flex flex-col items-center relative overflow-x-hidden py-[100px]'>
           <Nav setPage={setPage} />
-          <div className="flex w-[90%] h-[950px] border-black border-solid border-[5px] rounded-4xl text-2xl font-semibold text-gray-700 p-[10px] flex-col lg:flex-row lg:h-[600px]
+          <div className="flex w-[90%] h-[550px] border-black border-solid border-[5px] rounded-4xl text-2xl font-semibold text-gray-700 p-[10px] flex-col lg:flex-row lg:h-[525px]
           transition-all duration-500">
             <div className='w-full h-full rounded-3xl overflow-hidden border-solid border-black border-[5px]'>
               <Map triggerLocate={triggerLocate} setSelectedLocation={setSelectedLocation}/>
@@ -37,10 +37,6 @@ function Dashboard ({setPage}) {
               <p className='text-sm lg:text-lg text-black mb-[10px]'>{selectedLocation.pencegahan}</p>
               <LocateButton triggerLocation={setTriggerLocate}/>
             </div>
-          </div>
-          <div className='flex justify-evenly items-center w-[90%] h-auto p-[10px]'>
-            <button type="button" className='bg-[#ffdc20] shadow-black shadow-sm w-full h-[50px] text-xl text-[20px] p-[10px] m-[10px] rounded-[10px] cursor-pointer' onClick={() => setPage('Cek-kesehatan')} > Cek Kesehatan </button>
-            <button type="button" className='bg-[#ffdc20] shadow-black shadow-sm w-full h-[50px] text-xl text-[20px] p-[10px] m-[10px] rounded-[10px] cursor-pointer' onClick={() => setPage('ChatbotPages')}> Sipencegah </button>
           </div>
         </div>
     );

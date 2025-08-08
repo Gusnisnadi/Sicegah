@@ -52,7 +52,7 @@ function WebcamCapture ({setPage}) {
                 {cap && !loading && (
                     <button
                         type='button'
-                        className='bg-[#ffdc20] shadow-black shadow-sm w-[150px] h-[50px] text-xl text-[20px] p-[10px] rounded-[10px] cursor-pointer hover:bg-amber-600'
+                        className='bg-[#ffdc20] shadow-black shadow-sm w-[150px] h-[50px] text-xl text-[20px] p-[10px] rounded-[10px] cursor-pointer hover:bg-amber-600 mb-[80px]'
                         onClick={() => setPage('hasil-kesehatan-kamera')}
                     >
                         Liat hasil

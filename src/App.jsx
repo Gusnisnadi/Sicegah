@@ -196,8 +196,8 @@ function App() {
       )}
 
       { page === 'Cek-kesehatan' &&(
-        <div className='w-full h-screen flex flex-col md:flex-row md:justify-evenly justify-start relative  pt-[100px] px-[10px] gap-[20px]'>
-          <Nav />
+        <div className='w-screen h-screen flex flex-col md:flex-row md:justify-evenly justify-start relative  pt-[100px] gap-[20px]'>
+          <Nav setPage={setPage}/>
           <button type='button' className='bg-[#ffdc20] shadow-black shadow-sm w-full h-[50px] text-xl text-[20px] p-[10px] rounded-[10px] cursor-pointer' onClick={() => setPage('alat-kesehatan')} > Gunakan alat </button>
           <button type='button' className='bg-[#ffdc20] shadow-black shadow-sm w-full h-[50px] text-xl text-[20px] p-[10px] rounded-[10px] cursor-pointer' onClick={() => setPage('input-kamera')} > Gunakan Kamera </button>
           <button type='button' className='bg-[#ffdc20] shadow-black shadow-sm w-full h-[50px] text-xl text-[20px] p-[10px] rounded-[10px] cursor-pointer' onClick={() => setPage('dashboard')} > Kembali </button>
@@ -206,7 +206,7 @@ function App() {
 
       {page === 'alat-kesehatan' &&(
         <div className='w-full h-auto flex flex-col items-center relative pt-[100px]'>
-          <Nav />
+          <Nav setPage={setPage}/>
           <p className='text-3xl font-bold text-black mb-[30px]'>Sinkronisasi selesai</p>
           <button type='button' className='bg-[#ffdc20] shadow-black shadow-sm w-[150px] h-[50px] text-xl text-[20px] p-[10px] rounded-[10px] cursor-pointer' onClick={() => setPage('hasil-kesehatan-alat')} > Liat hasil </button>
         </div>
@@ -214,14 +214,14 @@ function App() {
 
       {page === 'input-kamera' &&(
         <div className='w-full h-auto flex flex-col items-center relative pt-[100px]'>
-          <Nav />
+          <Nav setPage={setPage}/>
           <WebcamCapture setPage={setPage}/>
         </div>
       )}
 
       {page === 'hasil-kesehatan-alat' &&(
         <div className='w-full h-auto flex flex-col items-center relative pt-[100px]'>
-          <Nav />
+          <Nav setPage={setPage}/>
           <p className='text-3xl font-bold text-black'>Anda saat ini berpotensi mengalami Penyakit : Demam</p>
           <p className='text-3xl font-bold text-black mb-[30px]'>Metode untuk mengobati: Istirahat yang cukup, Konsultasi ke dokter</p>
           <button type='button' className='bg-[#ffdc20] shadow-black shadow-sm w-[150px] h-[50px] text-xl text-[20px] p-[10px] rounded-[10px] cursor-pointer' onClick={() => setPage('dashboard')} > kembali </button>
@@ -230,7 +230,7 @@ function App() {
 
       {page === 'hasil-kesehatan-kamera' &&(
         <div className='w-full h-auto flex flex-col items-center relative pt-[100px]'>
-          <Nav />
+          <Nav setPage={setPage}/>
           <div className='w-full h-auto flex px-[10px]'>
             <p className='text-lg md:text-3xl w-[45%] text-black p-[5px] rounded-tl-[10px] bg-[#ffdc20] border-black border-solid border-[2px]'>Anda saat ini berpotensi mengalami Penyakit :</p>
             <p className='text-lg md:text-3xl w-[55%] font-bold bg-[#fff5bc] p-[5px] text-black border-black border-solid border-[2px] rounded-tr-[10px]'>Dermatitis (eksim)</p>
